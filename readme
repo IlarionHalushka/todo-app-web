@@ -1,0 +1,6 @@
+npm run webpack-devserver
+
+npm run server
+
+mongod
+

@@ -1,0 +1,117 @@
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: center;
+    z-index: -1;
+    display: none;
+}
+
+.inputfile + label {
+    max-width: 60%;
+    font-size: 14px;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: block;
+    margin-left: 30px;
+    overflow: hidden;
+    padding: 5px 5px 5px 5px;
+    /* 10px 20px */
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin: 0.25em;
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+.inputfile + label input {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    pointer-events: none;
+    margin: 5px;
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: deepskyblue;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: dodgerblue;
+}
+
+.imageUploader {
+    background: transparent;
+}
+
+.fileContainer {
+    background: transparent;
+    padding: 0px;
+}
+
+.imageUploaderBtn {
+    margin: 5px;
+}
+
+.fileContainer .uploadPictureContainer {
+    width: 30%;
+    margin: 5%;
+    /* padding: 10px; */
+    background: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: inherit;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid #d0dbe4; */
+    position: relative;
+}
+
+.fileContainer .deleteImage {
+    position: absolute;
+    top: -15px;
+    right: -25px;
+    color: white;
+    background: #ff4081;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.fileContainer .uploadPictureContainer img.uploadPicture {
+    width: 150%;
+    background: none;
+}

@@ -1,0 +1,147 @@
+.Note {
+    width: 250px;
+    height: 360px;
+    float: right;
+    background-color: yellow;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 2px;
+    padding: 10px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    transition: box-shadow .3s;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+
+  &:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+        .Note__del-icon {
+            display: block;
+        }
+
+        .Note__update-icon {
+            display: block;
+        }
+    }
+}
+
+.Note__title {
+    margin: 0;
+    margin-bottom: 3px;
+    background-color: transparent;
+  width: 175px;
+  font-size: 16px;
+  border: 1px hidden #d66;
+}
+
+.Note__text {
+    margin: 0;
+    margin-bottom: 1px;
+    background-color: transparent;
+    resize: none;
+    width: 227px;
+  font-size: 16px;
+  border: 1px hidden #d66;
+
+}
+
+.Note__label {
+    font-size: 14px;
+    width: 100%;
+    resize: none;
+    margin: 3px;
+    border: none;
+    font-weight: 500;
+    color: dimgrey;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.Note__del-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+  font-size: 15px;
+}
+
+.Note__update-icon {
+    position: absolute;
+    top: 5px;
+    right: 16px;
+    display: none;
+    color: rgba(0,0,0,0.6);
+    cursor: pointer;
+}
+
+.Note__button {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    //display: none;
+    border: 0 none;
+    border-radius: 12px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    display: none;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: all 100ms ease-in-out;
+    color: white;
+
+    &:hover {
+        opacity: .9;
+        transition: all 100ms ease;
+    }
+
+    &:active {
+        opacity: .50;
+        transform: scale(.97);
+        transition: all 100ms ease;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.Note__save-button {
+  margin-right: 110px;
+  background: #3ac569;
+}
+
+.Note__cancel-button {
+  margin-right: 5px;
+  background: red;
+}
+
+
+.PictureUploader {
+  bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 3px;
+  margin-left: 25px;
+  top: 3px;
+  left: 3px;
+  display: none;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.Note__image {
+  width: 80px;
+  height: 100px;
+  margin-left: 80px;
+}
