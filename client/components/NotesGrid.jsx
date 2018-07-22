@@ -34,6 +34,7 @@ const NotesGrid = React.createClass({
                             onUpdate={this.props.onNoteUpdate.bind(null, note)}
                             onPictureAdd={this.handlePictureAdd.bind(null, note)}
                             color={note.color}
+                            id={note.id}
                         >
                             {note.text}
                         </Note>

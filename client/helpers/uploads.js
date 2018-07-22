@@ -1,7 +1,3 @@
-let uploads = {
-    single: {
-      name: null
-    }
-}
+let uploads = []
 
 export default uploads;

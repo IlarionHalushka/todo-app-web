@@ -25,9 +25,11 @@ const NoteActions = {
     },
 
     createNote(note) {
-      api.createNote(note)
-        .then(() =>
-          this.loadNotes()
+      return api.createNote(note)
+        .then(() => {
+          this.loadNotes();
+          return note;
+        }
       )
       .catch(err =>
         console.error(err)

@@ -6,7 +6,9 @@ import PictureUploader from './PictureUploader.jsx';
 import "babel-polyfill";
 
 import $ from 'jquery';
+import _ from 'lodash';
 import uploads from "../helpers/uploads";
+
 
 const Note = React.createClass({
     getInitialState() {
@@ -42,13 +44,13 @@ const Note = React.createClass({
       noteText.prop('disabled', function (_, val) { return ! val; });
 
       console.log(noteTitle.css('border'));
-      noteTitle.css('border') == '0px hidden rgb(221, 102, 102)' ?
-        noteTitle.css('border', '1px solid #d3d3d3')
-        : noteTitle.css('border', '0px hidden rgb(221, 102, 102)');
+      noteTitle.css('border') == '1px solid rgb(211, 211, 211)' ?
+        noteTitle.css('border', '3px solid #d3d3d3')
+        : noteTitle.css('border', '1px solid #d3d3d3');
 
-      noteText.css('border') == '0px hidden rgb(221, 102, 102)' ?
-        noteText.css('border', '1px solid #d3d3d3')
-        : noteText.css('border', '0px hidden rgb(221, 102, 102)');
+      noteText.css('border') == '1px solid rgb(211, 211, 211)' ?
+        noteText.css('border', '3px solid #d3d3d3')
+        : noteText.css('border', '1px solid #d3d3d3');
     },
 
   handleCancelButton(event) {
@@ -61,18 +63,22 @@ const Note = React.createClass({
     noteText.prop('disabled', function (_, val) { return ! val; });
 
     console.log(noteTitle.css('border'));
-    noteTitle.css('border') == '0px hidden rgb(221, 102, 102)' ?
-      noteTitle.css('border', '1px solid #d3d3d3')
-      : noteTitle.css('border', '0px hidden rgb(221, 102, 102)');
+    noteTitle.css('border') == '1px solid rgb(211, 211, 211)' ?
+      noteTitle.css('border', '3px solid #d3d3d3')
+      : noteTitle.css('border', '1px solid #d3d3d3');
 
-    noteText.css('border') == '0px hidden rgb(221, 102, 102)' ?
-      noteText.css('border', '1px solid #d3d3d3')
-      : noteText.css('border', '0px hidden rgb(221, 102, 102)');
+    noteText.css('border') == '1px solid rgb(211, 211, 211)' ?
+      noteText.css('border', '3px solid #d3d3d3')
+      : noteText.css('border', '1px solid #d3d3d3');
   },
 
     handleSaveButton(event) {
-      console.log('picture uploads single name', uploads.single.name);
-      this.setState({ picture: uploads.single.name}, async() => {
+      console.log('picture UPLOADS single name', uploads);
+      console.log('statee', this.state);
+      let picture = _.find(uploads, {noteID: this.state.id});
+      let pictureName = picture ? picture.name : this.state.picture;
+
+      this.setState({ picture: pictureName}, async() => {
         let res = await this.props.onUpdate.bind(null, this.state)();
         console.log(res);
       });
@@ -86,13 +92,13 @@ const Note = React.createClass({
       noteText.prop('disabled', function (_, val) { return ! val; });
 
       console.log(noteTitle.css('border'));
-      noteTitle.css('border') == '0px hidden rgb(221, 102, 102)' ?
-        noteTitle.css('border', '1px solid #d3d3d3')
-        : noteTitle.css('border', '0px hidden rgb(221, 102, 102)');
+      noteTitle.css('border') == '1px solid rgb(211, 211, 211)' ?
+        noteTitle.css('border', '3px solid #d3d3d3')
+        : noteTitle.css('border', '1px solid #d3d3d3');
 
-      noteText.css('border') == '0px hidden rgb(221, 102, 102)' ?
-        noteText.css('border', '1px solid #d3d3d3')
-        : noteText.css('border', '0px hidden rgb(221, 102, 102)');
+      noteText.css('border') == '1px solid rgb(211, 211, 211)' ?
+        noteText.css('border', '3px solid #d3d3d3')
+        : noteText.css('border', '1px solid #d3d3d3');
     },
 
     render() {

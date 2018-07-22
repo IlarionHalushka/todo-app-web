@@ -3,6 +3,9 @@ import React from 'react';
 import ColorPicker from './ColorPicker.jsx';
 import PictureUploader from './PictureUploader.jsx';
 
+import $ from 'jquery';
+import _ from 'lodash';
+
 import './NoteEditor.less';
 
 import uploads from './../helpers/uploads'
@@ -36,15 +39,20 @@ const NoteEditor = React.createClass({
     },
 
     handleNoteAdd() {
+      console.log(uploads, 'UPLODFKSD HANVE PICTURE CHANGE')
+      let picture = _.find(uploads, {newNote: true});
+      let pictureName = picture ? picture.name : '';
+
         const newNote = {
             title: this.state.title,
             text: this.state.text,
             color: this.state.color,
-            picture: uploads.single.name
+            picture: pictureName
         };
 
         this.props.onNoteAdd(newNote);
         this.setState({ text: '', title: '', color: '#FFFFFF', picture: '' });
+        uploads.length = 0;
     },
 
     render() {

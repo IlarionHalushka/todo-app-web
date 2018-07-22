@@ -8,6 +8,8 @@ import NotesGrid from './NotesGrid.jsx';
 
 import './App.less';
 import uploads from './../helpers/uploads'
+import $ from "jquery";
+
 
 function getStateFromFlux() {
     return {
@@ -38,7 +40,14 @@ const App = React.createClass({
     },
 
     handleNoteAdd(noteData) {
-        NotesActions.createNote(noteData);
+        NotesActions.createNote(noteData).then( () => {
+          console.log('HEREEEE');
+           let deleteButtons = $('.deleteImage')[0].click();
+           _.forEach(deleteButtons, (deleteButton) => {
+             deleteButton.click();
+           });
+        })
+
     },
 
     handlePictureAdd(pictureData) {
@@ -46,7 +55,11 @@ const App = React.createClass({
       console.log(pictureData);
         NotesActions.uploadPicture(pictureData)
           .then(res => {
-            uploads.single.name = res.data;
+            console.log('UPLOCAFDS   BEFORE  SPLICE', uploads);
+            uploads.splice( uploads.indexOf({newNote: true}), 1 );
+            console.log('UPLOCAFDS   AFTER  SPLICE', uploads);
+            uploads.push({name: res.data, newNote: true});
+            console.log(uploads, 'PICTURE ADD NEW NOTE TRUE')
           });
     },
 
@@ -56,7 +69,8 @@ const App = React.createClass({
       NotesActions.updatePicture(note)
         .then(res => {
           console.log('resDATA', res.data);
-          uploads.single.name = res.data;
+          uploads.push({name: res.data, noteID: note.picture.id});
+          console.log('UPLOADS', uploads);
         });
     },
 
