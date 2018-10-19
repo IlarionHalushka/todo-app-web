@@ -1,3 +1,3 @@
-let uploads = []
+let uploads = [];
 
 export default uploads;

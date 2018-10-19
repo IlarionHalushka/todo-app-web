@@ -9,7 +9,6 @@ import $ from 'jquery';
 import _ from 'lodash';
 import uploads from "../helpers/uploads";
 
-
 const Note = React.createClass({
     getInitialState() {
         return {
@@ -31,19 +30,16 @@ const Note = React.createClass({
 
     handlePictureChange(event) {
       this.props.onPictureAdd(event);
-      console.log('handlePiicureChange   event', event.picture[0]);
-      //this.setProperty("picture", event);
     },
 
     handleEditIcon(event) {
       $(event.target).siblings('.Note__button').slideToggle();
-      $(event.target).siblings('.PictureUploader').toggle();
+      $(event.target).siblings('.fileUploader').toggle();
       let noteTitle = $(event.target).siblings('form').children('.Note__title');
       let noteText = $(event.target).siblings('form').children('.Note__text');
       noteTitle.prop('disabled', function (_, val) { return ! val; });
       noteText.prop('disabled', function (_, val) { return ! val; });
 
-      console.log(noteTitle.css('border'));
       noteTitle.css('border') == '1px solid rgb(211, 211, 211)' ?
         noteTitle.css('border', '3px solid #d3d3d3')
         : noteTitle.css('border', '1px solid #d3d3d3');
@@ -56,13 +52,12 @@ const Note = React.createClass({
   handleCancelButton(event) {
     $(event.target).slideToggle();
     $(event.target).siblings('.Note__button').slideToggle();
-    $(event.target).siblings('.PictureUploader').toggle();
+    $(event.target).siblings('.fileUploader').toggle();
     let noteTitle = $(event.target).siblings('form').children('.Note__title');
     let noteText = $(event.target).siblings('form').children('.Note__text');
     noteTitle.prop('disabled', function (_, val) { return ! val; });
     noteText.prop('disabled', function (_, val) { return ! val; });
 
-    console.log(noteTitle.css('border'));
     noteTitle.css('border') == '1px solid rgb(211, 211, 211)' ?
       noteTitle.css('border', '3px solid #d3d3d3')
       : noteTitle.css('border', '1px solid #d3d3d3');
@@ -73,16 +68,13 @@ const Note = React.createClass({
   },
 
     handleSaveButton(event) {
-      console.log('picture UPLOADS single name', uploads);
-      console.log('statee', this.state);
       let picture = _.find(uploads, {noteID: this.state.id});
       let pictureName = picture ? picture.name : this.state.picture;
 
       this.setState({ picture: pictureName}, async() => {
         let res = await this.props.onUpdate.bind(null, this.state)();
-        console.log(res);
       });
-      $(event.target).siblings('.PictureUploader').toggle();
+      $(event.target).siblings('.fileUploader').toggle();
       $(event.target).siblings('#cancelNoteEditBtn').slideToggle();
       $(event.target).slideToggle();
 
@@ -91,7 +83,6 @@ const Note = React.createClass({
       noteTitle.prop('disabled', function (_, val) { return ! val; });
       noteText.prop('disabled', function (_, val) { return ! val; });
 
-      console.log(noteTitle.css('border'));
       noteTitle.css('border') == '1px solid rgb(211, 211, 211)' ?
         noteTitle.css('border', '3px solid #d3d3d3')
         : noteTitle.css('border', '1px solid #d3d3d3');
@@ -106,7 +97,7 @@ const Note = React.createClass({
 
         return (
             <div className='Note' style={style}>
-                <span className='Note__del-icon' onClick={this.props.onDelete}> × </span> 
+                <span className='Note__del-icon' onClick={this.props.onDelete}> × </span>
                 <span className='Note__update-icon' onClick={this.handleEditIcon}> ✎ </span>
                 {
                     this.state.title
@@ -128,9 +119,12 @@ const Note = React.createClass({
                   ?
                   <div>
                     <div className='Note__label'>Picture: </div>
-                    <img src={`http://localhost:8080/upload/${this.props.picture}`}
-                         className='Note__image'
-                    />
+                    <a href={`http://localhost:8080/upload/${this.props.picture}`} target="_blank">
+                      <img src={`http://localhost:8080/upload/${this.props.picture}`}
+                           className='Note__image'
+                      />
+                    </a>
+
                   </div>
                   :
                   null
@@ -139,11 +133,8 @@ const Note = React.createClass({
               <PictureUploader
                 onPictureAdd={this.handlePictureChange}
               />
-
               <button id='saveNoteBtn' className='Note__save-button Note__button' onClick={this.handleSaveButton}> Save </button>
               <button id='cancelNoteEditBtn' className='Note__cancel-button Note__button' onClick={this.handleCancelButton}> Cancel </button>
-
-
             </div>
         );
     }

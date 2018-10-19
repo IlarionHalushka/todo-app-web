@@ -1,43 +1,43 @@
 import mongoose from "mongoose";
+import config from "./../etc/config.json";
+import "../models/Note";
 
-import config from './../etc/config.json';
+const Note = mongoose.model("Note");
 
-import '../models/Note';
+exports.setUpConnection = () => {
+  mongoose.connect(
+    `mongodb://${config.db.host}:${config.db.port}/${config.db.name}`
+  );
+};
 
-const Note = mongoose.model('Note');
+exports.listNotes = () => {
+  return Note.find();
+};
 
-export function setUpConnection() {
-    mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);
-}
+exports.createNote = data => {
+  const note = new Note({
+    title: data.title,
+    text: data.text,
+    color: data.color,
+    picture: data.picture,
+    createdAt: new Date()
+  });
 
-export function listNotes(id) {
-    return Note.find();
-}
+  return note.save();
+};
 
-export function createNote(data) {
-    const note = new Note({
-        title: data.title,
-        text: data.text,
-        color: data.color,
-        picture: data.picture,
-        createdAt: new Date()
-    });
+exports.updateNote = (id, data) => {
+  const note = new Note({
+    title: data.title,
+    text: data.text,
+    color: data.color,
+    picture: data.picture,
+    createdAt: new Date()
+  });
 
-    return note.save();
-}
+  return Note.update({ _id: id }, data);
+};
 
-export function updateNote(id, data) {
-    const note = new Note({
-        title: data.title,
-        text: data.text,
-        color: data.color,
-        picture: data.picture,
-        createdAt: new Date()
-    });
-
-    return Note.update({ _id : id }, data);
-}
-
-export function deleteNote(id) {
-    return Note.findById(id).remove();
-}
+exports.deleteNote = id => {
+  return Note.findById(id).remove();
+};
