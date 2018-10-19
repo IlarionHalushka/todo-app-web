@@ -1,100 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ae1c81c-53a8-4f4a-9d28-a41f7b3d27c1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/actions/NotesActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/actions/NotesActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/App.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/App.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ColorPicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/ColorPicker.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/ColorPicker.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/ColorPicker.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/Note.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Note.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/Note.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/Note.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/NoteEditor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/NoteEditor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/NoteEditor.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/NoteEditor.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/NotesGrid.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/NotesGrid.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/NotesGrid.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/NotesGrid.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/PictureUploader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/PictureUploader.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/components/PictureUploader.less" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/PictureUploader.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/constants/AppConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/constants/AppConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/dispatcher/AppDispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/dispatcher/AppDispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/helpers/uploads.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/helpers/uploads.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/stores/NotesStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/stores/NotesStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/base64-js/base64js.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/base64-js/base64js.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/base64-js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/base64-js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/base64-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/base64-js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/base64-js/test/big-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/base64-js/test/big-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/base64-js/test/convert.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/base64-js/test/convert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/base64-js/test/url-safe.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/base64-js/test/url-safe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/browserify-aes/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/browserify-aes/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/buffer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/buffer/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/crypto-browserify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/crypto-browserify/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ieee754/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ieee754/.zuul.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ieee754/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ieee754/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ieee754/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ieee754/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ieee754/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ieee754/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ieee754/test/basic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/_baseMergeDeep.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/_baseMergeDeep.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/_hasUnicodeWord.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/_hasUnicodeWord.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/_safeGet.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/_safeGet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/core.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/fp/_baseConvert.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/fp/_baseConvert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/fp/_mapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/fp/_mapping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/lodash.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/lodash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/lodash.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/lodash.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/pbkdf2-compat/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/pbkdf2-compat/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise-core/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/request-promise-core/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/request-promise/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/request-promise/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/ripemd160/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/ripemd160/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sha.js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sha.js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stealthy-require/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stealthy-require/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stream-http/.airtap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stream-http/.airtap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stream-http/lib/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stream-http/lib/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stream-http/lib/response.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stream-http/lib/response.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stream-http/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stream-http/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/stream-http/test/browser/timeout.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/stream-http/test/browser/timeout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/tapable/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/tapable/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/timers-browserify/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/timers-browserify/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/timers-browserify/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/timers-browserify/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/timers-browserify/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/timers-browserify/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/async/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/yargs/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/node_modules/yargs/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/uglify-js/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/uglify-js/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/.zuul.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/inherits.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/inherits_browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/node_modules/inherits/test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/util/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/test/browser/inspect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/test/browser/is.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/test/node/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/test/node/format.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/test/node/inspect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/test/node/log.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/util/test/node/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/watchpack/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/watchpack/node_modules/async/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack/node_modules/acorn/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack/node_modules/acorn/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack/node_modules/async/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/webpack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/webpack/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/etc/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/etc/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/Note.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/Note.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/utils/DataBaseUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/utils/DataBaseUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="7ae1c81c-53a8-4f4a-9d28-a41f7b3d27c1" name="Default" comment="updated git ignore" />
     <ignored path="$PROJECT_DIR$/public/build/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -120,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -318,17 +225,25 @@
       <workItem from="1532794659579" duration="629000" />
       <workItem from="1539796582825" duration="13972000" />
       <workItem from="1539969909905" duration="82000" />
-      <workItem from="1539970624884" duration="3190000" />
+      <workItem from="1539970624884" duration="3444000" />
     </task>
+    <task id="LOCAL-00001" summary="updated git ignore">
+      <created>1539974187372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1539974187372</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122621000" />
+    <option name="totallyTimeSpent" value="122875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2488263" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2488263" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -342,7 +257,7 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.53651035" side_tool="true" weight="0.1736527" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.46348962" visible="true" weight="0.37054265" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.46348962" visible="true" weight="0.37054265" />
       <window_info anchor="bottom" id="Docker" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -351,6 +266,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated git ignore" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/uploads/Screenshot from 2018-03-12 13-38-52.png" />
@@ -390,13 +309,6 @@
     <entry file="file://$PROJECT_DIR$/server/parsers/parseYelp.js" />
     <entry file="file://$PROJECT_DIR$/server/.Rhistory" />
     <entry file="file://$PROJECT_DIR$/server/routes/index.js" />
-    <entry file="file://$PROJECT_DIR$/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/components/ColorPicker.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -597,10 +509,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
