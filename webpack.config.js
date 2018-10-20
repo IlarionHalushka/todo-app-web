@@ -1,7 +1,6 @@
 var webpack = require("webpack");
 
 module.exports = {
-  index: ["babel-polyfill", "./client/main.js"],
   entry: "./client/main.js",
   output: {
     path: __dirname + "/public/build/",
@@ -12,7 +11,7 @@ module.exports = {
     loaders: [
       {
         test: /\.js$/,
-        loader: "babel",
+        loader: "babel-loader",
         exclude: [/node_modules/, /public/]
       },
       {
