@@ -51,5 +51,9 @@ module.exports = {
         loader: "json-loader"
       }
     ]
+  },
+  devServer: {
+    compress: true,
+    disableHostCheck: true
   }
 };

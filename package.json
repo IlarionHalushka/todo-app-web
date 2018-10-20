@@ -10,6 +10,15 @@
   "engines": {
     "node": ">=8"
   },
+  "cloud-repo-tools": {
+    "test": {
+      "app": {
+        "msg": "Event tracked."
+      }
+    },
+    "requiresKeyFile": false,
+    "requiresProjectId": false
+  },
   "author": "Larry",
   "dependencies": {
     "axios": "^0.9.1",
