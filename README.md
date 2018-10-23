@@ -1,7 +1,7 @@
 ## TODO app Front-end part of application
 Front-end: https://todo-app-front.appspot.com/  (deployed using Google Cloud App Engine)
 
-Back-end: send POST to https://todo-app-back.appspot.com   
+Back-end: send POST to https://todo-back-end.appspot.com/notes
 
 **Technologies used:**
 
