@@ -119,8 +119,8 @@ const Note = React.createClass({
                   ?
                   <div>
                     <div className='Note__label'>Picture: </div>
-                    <a href={`http://localhost:8080/upload/${this.props.picture}`} target="_blank">
-                      <img src={`http://localhost:8080/upload/${this.props.picture}`}
+                    <a href={`https://todo-back-end.appspot.com/upload/${this.props.picture}`} target="_blank">
+                      <img src={`https://todo-back-end.appspot.com/upload/${this.props.picture}`}
                            className='Note__image'
                       />
                     </a>
