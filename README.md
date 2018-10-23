@@ -5,7 +5,7 @@ Back-end: send POST to https://todo-app-back.appspot.com
 
 **Technologies used:**
 
-JavaScript, React, Webpack, ESlint, Prettier, Babel
+JavaScript, React, jQuery, Webpack, ESlint, Prettier, Babel
 
 **To install dependencies:**
 ```
